@@ -11,6 +11,7 @@ function addToCart(id, name, price) {
   }
   localStorage.setItem("cart", JSON.stringify(cart));
   alert(name + " 已加入購物車！");
+  showCartStorage();
   renderCart();
 }
 
