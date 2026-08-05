@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <title>購物車 - 玉福珠寶</title>
+  <style>
+    body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; padding: 0; background: #fdfdfd; color: #333; }
+    header { background: #006644; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; }
+    nav ul { list-style: none; margin: 20px 0 0 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; font-size: 16px; padding: 6px 12px; background-color: #006644; border-radius: 4px; }
+    nav ul li a:hover { background-color: #228B22; }
+    section { padding: 40px; max-width: 800px; margin: auto; }
+    h2 { color: #006644; text-align: center; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; padding: 10px; border-bottom: 1px solid #ccc; }
+    button { margin-left: 5px; padding: 4px 8px; cursor: pointer; }
+    footer { background: #eee; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>玉福珠寶 YUK FOOK JEWELLERY</h1>
+    <p>質優．藝精．典雅翡翠</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">返回首頁</a></li>
+        <li><a href="cart.html">🛒 購物車</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>購物車內容</h2>
+    <div id="cart"></div>
+
+  <!-- 除錯顯示區塊 -->
+  <div id="debug" style="margin-top:20px; color:blue; font-size:14px;"></div>
+  </section>
+
+  <footer>
+    <p>© 2008 - 2026 玉福珠寶 YUK FOOK JEWELLERY</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script>
+    // 頁面載入時顯示購物車
+    renderCart();
+    showCartStorage();
+  </script>
+</body>
+</html>
+
